@@ -14,7 +14,6 @@ setInterval(() => {
     stream.on("data", chunks => {
         chunks = chunks.split("\n");
 
-        console.log(chunks);
         // Newline characters exist and are 1 byte each (at most chunks.length - 1 exist)
         if (chunks.length > 1) {
             offset += chunks.length - 1;
@@ -22,7 +21,7 @@ setInterval(() => {
 
         // Read the running count of experienceIDs in data2, and increment offset 
         // by 1 byte/character
-        let data2 = require(`./json/data2.json`);
+        let data2 = require(data_to_write);
         let records_updated = 0;
         for (let i = 0; i < chunks.length; i++) {
             let next_number = chunks[i];
