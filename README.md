@@ -12,4 +12,4 @@ POST /ingest-api {"experienceID": 1}
 
 data1.json will receive experienceID, and the worker will update data2.json with the data as requested.
 
-Update the MINI_ANALYTICS_INTERVAL to set the interval at which the worker updates data2.json (default 5 seconds if not specified)
+Update the MINI_ANALYTICS_INTERVAL in the .env file to set the interval at which the worker updates data2.json (default 5 seconds if not specified)
