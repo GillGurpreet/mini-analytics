@@ -1,7 +1,7 @@
 let fs = require('fs');
 
-let data_to_read = `./json/data1`;
-let data_to_write = `./json/data2.json`;
+let data_to_read = `./data/data1`;
+let data_to_write = `./data/data2.json`;
 
 // If MINI_ANALYTICS_INTERVAL is omitted, it should still run every 5 seconds.
 let MINI_ANALYTICS_INTERVAL = process.env.MINI_ANALYTICS_INTERVAL ? process.env.MINI_ANALYTICS_INTERVAL : 5;

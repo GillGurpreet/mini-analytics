@@ -5,7 +5,7 @@ let fs = require('fs');
 let app = express();
 
 // File to write to (Data1)
-let write_to_file = `./json/data1`;
+let write_to_file = `./data/data1`;
 
 app.use(bodyParser.json());
 
